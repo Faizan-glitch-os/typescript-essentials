@@ -35,7 +35,7 @@ export default function App() {
     );
   }
 
-  if (goals.length === 4) {
+  if (goals.length >= 4) {
     content = (
       <ShowInfo info="warning" severity="low">
         <p>Dont take it too fast</p>
@@ -43,7 +43,7 @@ export default function App() {
     );
   }
 
-  if (goals.length >= 4 && goals.length <= 8) {
+  if (goals.length >= 8) {
     content = (
       <ShowInfo info="warning" severity="medium">
         <p>You are taking alot of goals at the sametime.</p>
@@ -51,7 +51,7 @@ export default function App() {
     );
   }
 
-  if (goals.length >= 4 && goals.length >= 8 && goals.length >= 10) {
+  if (goals.length >= 10) {
     content = (
       <ShowInfo info="warning" severity="high">
         <p>
