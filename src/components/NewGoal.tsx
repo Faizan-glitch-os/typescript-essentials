@@ -25,6 +25,8 @@ export default function NewGoal({ onAddGoal }: NewGoalProps) {
       description: descriptionRef.current!.value,
     };
 
+    event.currentTarget.reset();
+
     onAddGoal(newGoal);
   }
 
