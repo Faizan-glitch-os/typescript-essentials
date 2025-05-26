@@ -34,7 +34,7 @@ export default function NewGoal({ onAddGoal }: NewGoalProps) {
     <form onSubmit={handleSubmit}>
       <p>
         <label htmlFor="title">Goal Title</label>
-        <input ref={titleRef} type="text" id="title" name="title" />
+        <input ref={titleRef} type="text" id="title" name="title" required />
       </p>
       <p>
         <label htmlFor="description">Goal Description</label>
@@ -43,6 +43,7 @@ export default function NewGoal({ onAddGoal }: NewGoalProps) {
           type="text"
           id="description"
           name="description"
+          required
         />
       </p>
       <p>
