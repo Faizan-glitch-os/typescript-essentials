@@ -10,7 +10,7 @@ export default function GoalList({ goals, onDeleteGoal }: GoalListProp) {
   return (
     <ul>
       {goals.map((goal) => (
-        <li>
+        <li key={goal.id}>
           <CourseGoal
             id={goal.id}
             title={goal.title}
